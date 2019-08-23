@@ -1,0 +1,441 @@
+﻿/**************Exo 2*************/
+@font-face {
+	font-family: 'Exo 2';
+	src: local('Exo 2.0 Thin'), local('Exo2.0-Thin'),
+			url('../fonts/exo2/Exo20-Thin.woff2') format('woff2'),
+			url('../fonts/exo2/Exo20-Thin.woff') format('woff'),
+			url('../fonts/exo2/Exo20-Thin.svg#Exo2.0-Thin') format('svg');
+	font-weight: 100;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Exo 2';
+	src: local('Exo 2.0 Extra Light'), local('Exo2.0-ExtraLight'),
+			url('../fonts/exo2/Exo20-ExtraLight.woff2') format('woff2'),
+			url('../fonts/exo2/Exo20-ExtraLight.woff') format('woff'),
+			url('../fonts/exo2/Exo20-ExtraLight.svg#Exo2.0-ExtraLight') format('svg');
+	font-weight: 200;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Exo 2';
+	src: local('Exo 2.0 Light'), local('Exo2.0-Light'),
+			url('../fonts/exo2/Exo20-Light.woff2') format('woff2'),
+			url('../fonts/exo2/Exo20-Light.woff') format('woff'),
+			url('../fonts/exo2/Exo20-Light.svg#Exo2.0-Light') format('svg');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Exo 2';
+	src: local('Exo 2.0 Regular'), local('Exo2.0-Regular'),
+			url('../fonts/exo2/Exo20-Regular.woff2') format('woff2'),
+			url('../fonts/exo2/Exo20-Regular.woff') format('woff'),
+			url('../fonts/exo2/Exo20-Regular.svg#Exo2.0-Regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Exo 2';
+	src: local('Exo 2.0 Medium'), local('Exo2.0-Medium'),
+			url('../fonts/exo2/Exo20-Medium.woff2') format('woff2'),
+			url('../fonts/exo2/Exo20-Medium.woff') format('woff'),
+			url('../fonts/exo2/Exo20-Medium.svg#Exo2.0-Medium') format('svg');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Exo 2';
+	src: local('Exo 2.0 Semi Bold'), local('Exo2.0-SemiBold'),
+			url('../fonts/exo2/Exo20-SemiBold.woff2') format('woff2'),
+			url('../fonts/exo2/Exo20-SemiBold.woff') format('woff'),
+			url('../fonts/exo2/Exo20-SemiBold.svg#Exo2.0-SemiBold') format('svg');
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Exo 2';
+	src: local('Exo 2.0 Bold'), local('Exo2.0-Bold'),
+			url('../fonts/exo2/Exo20-Bold.woff2') format('woff2'),
+			url('../fonts/exo2/Exo20-Bold.woff') format('woff'),
+			url('../fonts/exo2/Exo20-Bold.svg#Exo2.0-Bold') format('svg');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Exo 2';
+	src: local('Exo 2.0 Extra Bold'), local('Exo2.0-ExtraBold'),
+			url('../fonts/exo2/Exo20-ExtraBold.woff2') format('woff2'),
+			url('../fonts/exo2/Exo20-ExtraBold.woff') format('woff'),
+			url('../fonts/exo2/Exo20-ExtraBold.svg#Exo2.0-ExtraBold') format('svg');
+	font-weight: 800;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Exo 2';
+	src: local('Exo 2.0 Black'), local('Exo2.0-Black'),
+			url('../fonts/exo2/Exo20-Black.woff2') format('woff2'),
+			url('../fonts/exo2/Exo20-Black.woff') format('woff'),
+			url('../fonts/exo2/Exo20-Black.svg#Exo2.0-Black') format('svg');
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+}
+
+/***********SF UI Display**************/
+@font-face {
+	font-family: 'SF UI Display';
+	src: local('SF UI Display Thin'), local('SFUIDisplay-Thin'),
+			url('../fonts/sfui/SFUIDisplay-Thin.woff2') format('woff2'),
+			url('../fonts/sfui/SFUIDisplay-Thin.woff') format('woff'),
+			url('../fonts/sfui/SFUIDisplay-Thin.svg#SFUIDisplay-Thin') format('svg');
+	font-weight: 100;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'SF UI Display';
+	src: local('SF UI Display Ultralight'), local('SFUIDisplay-Ultralight'),
+			url('../fonts/sfui/SFUIDisplay-Ultralight.woff2') format('woff2'),
+			url('../fonts/sfui/SFUIDisplay-Ultralight.woff') format('woff'),
+			url('../fonts/sfui/SFUIDisplay-Ultralight.svg#SFUIDisplay-Ultralight') format('svg');
+	font-weight: 200;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'SF UI Display';
+	src: local('SF UI Display Light'), local('SFUIDisplay-Light'),
+			url('../fonts/sfui/SFUIDisplay-Light.woff2') format('woff2'),
+			url('../fonts/sfui/SFUIDisplay-Light.woff') format('woff'),
+			url('../fonts/sfui/SFUIDisplay-Light.svg#SFUIDisplay-Light') format('svg');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'SF UI Display';
+	src: local('SF UI Display Regular'), local('SFUIDisplay-Regular'),
+			url('../fonts/sfui/SFUIDisplay-Regular.woff2') format('woff2'),
+			url('../fonts/sfui/SFUIDisplay-Regular.woff') format('woff'),
+			url('../fonts/sfui/SFUIDisplay-Regular.svg#SFUIDisplay-Regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'SF UI Display';
+	src: local('SF UI Display Medium'), local('SFUIDisplay-Medium'),
+			url('../fonts/sfui/SFUIDisplay-Medium.woff2') format('woff2'),
+			url('../fonts/sfui/SFUIDisplay-Medium.woff') format('woff'),
+			url('../fonts/sfui/SFUIDisplay-Medium.svg#SFUIDisplay-Medium') format('svg');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'SF UI Display';
+	src: local('SF UI Display Semibold'), local('SFUIDisplay-Semibold'),
+			url('../fonts/sfui/SFUIDisplay-Semibold.woff2') format('woff2'),
+			url('../fonts/sfui/SFUIDisplay-Semibold.woff') format('woff'),
+			url('../fonts/sfui/SFUIDisplay-Semibold.svg#SFUIDisplay-Semibold') format('svg');
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'SF UI Display';
+	src: local('SF UI Display Bold'), local('SFUIDisplay-Bold'),
+			url('../fonts/sfui/SFUIDisplay-Bold.woff2') format('woff2'),
+			url('../fonts/sfui/SFUIDisplay-Bold.woff') format('woff'),
+			url('../fonts/sfui/SFUIDisplay-Bold.svg#SFUIDisplay-Bold') format('svg');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'SF UI Display';
+	src: local('SF UI Display Heavy'), local('SFUIDisplay-Heavy'),
+			url('../fonts/sfui/SFUIDisplay-Heavy.woff2') format('woff2'),
+			url('../fonts/sfui/SFUIDisplay-Heavy.woff') format('woff'),
+			url('../fonts/sfui/SFUIDisplay-Heavy.svg#SFUIDisplay-Heavy') format('svg');
+	font-weight: 800;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'SF UI Display';
+	src: local('SF UI Display Black'), local('SFUIDisplay-Black'),
+			url('../fonts/sfui/SFUIDisplay-Black.woff2') format('woff2'),
+			url('../fonts/sfui/SFUIDisplay-Black.woff') format('woff'),
+			url('../fonts/sfui/SFUIDisplay-Black.svg#SFUIDisplay-Black') format('svg');
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+}
+
+/*PF BeauSans Pro*/
+@font-face {
+	font-family: 'PF BeauSans Pro';
+	src: local('PFBeauSansPro-Thin'),
+			url('../fonts/pfb/PFBeauSansPro-Thin.woff2') format('woff2'),
+			url('../fonts/pfb/PFBeauSansPro-Thin.woff') format('woff'),
+			url('../fonts/pfb/PFBeauSansPro-Thin.svg#PFBeauSansPro-Thin') format('svg');
+	font-weight: 100;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'PF BeauSans Pro';
+	src: local('PFBeauSansPro-XThin'),
+			url('../fonts/pfb/PFBeauSansPro-XThin.woff2') format('woff2'),
+			url('../fonts/pfb/PFBeauSansPro-XThin.woff') format('woff'),
+			url('../fonts/pfb/PFBeauSansPro-XThin.svg#PFBeauSansPro-XThin') format('svg');
+	font-weight: 200;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'PF BeauSans Pro';
+	src: local('PFBeauSansPro-Light'),
+			url('../fonts/pfb/PFBeauSansPro-Light.woff2') format('woff2'),
+			url('../fonts/pfb/PFBeauSansPro-Light.woff') format('woff'),
+			url('../fonts/pfb/PFBeauSansPro-Light.svg#PFBeauSansPro-Light') format('svg');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'PF BeauSans Pro';
+	src: local('PFBeauSansPro-Regular'),
+			url('../fonts/pfb/PFBeauSansPro-Regular.woff2') format('woff2'),
+			url('../fonts/pfb/PFBeauSansPro-Regular.woff') format('woff'),
+			url('../fonts/pfb/PFBeauSansPro-Regular.svg#PFBeauSansPro-Regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'PF BeauSans Pro';
+	src: local('PFBeauSansPro-Bbook'),
+			url('../fonts/pfb/PFBeauSansPro-Bbook.woff2') format('woff2'),
+			url('../fonts/pfb/PFBeauSansPro-Bbook.woff') format('woff'),
+			url('../fonts/pfb/PFBeauSansPro-Bbook.svg#PFBeauSansPro-Bbook') format('svg');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'PF BeauSans Pro';
+	src: local('PFBeauSansPro-SemiBold'),
+			url('../fonts/pfb/PFBeauSansPro-SemiBold.woff2') format('woff2'),
+			url('../fonts/pfb/PFBeauSansPro-SemiBold.woff') format('woff'),
+			url('../fonts/pfb/PFBeauSansPro-SemiBold.svg#PFBeauSansPro-SemiBold') format('svg');
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'PF BeauSans Pro';
+	src: local('PFBeauSansPro-Bold'),
+			url('../fonts/pfb/PFBeauSansPro-Bold.woff2') format('woff2'),
+			url('../fonts/pfb/PFBeauSansPro-Bold.woff') format('woff'),
+			url('../fonts/pfb/PFBeauSansPro-Bold.svg#PFBeauSansPro-Bold') format('svg');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'PF BeauSans Pro';
+	src: local('PFBeauSansPro-Black'),
+			url('../fonts/pfb/PFBeauSansPro-Black.woff2') format('woff2'),
+			url('../fonts/pfb/PFBeauSansPro-Black.woff') format('woff'),
+			url('../fonts/pfb/PFBeauSansPro-Black.svg#PFBeauSansPro-Black') format('svg');
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+}
+
+/*********** Иконочный шрифт **********/
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon/icomoon.eot?e4jmg4');
+  src:  url('../fonts/icomoon/icomoon.eot?e4jmg4#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon/icomoon.ttf?e4jmg4') format('truetype'),
+    url('../fonts/icomoon/icomoon.woff?e4jmg4') format('woff'),
+    url('../fonts/icomoon/icomoon.svg?e4jmg4#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-hours:before {
+  content: "\e900";
+}
+.icon-angle-down:before {
+  content: "\e901";
+}
+.icon-angle-left:before {
+  content: "\e902";
+}
+.icon-angle-right:before {
+  content: "\e903";
+}
+.icon-angle-up:before {
+  content: "\e904";
+}
+.icon-balloons:before {
+  content: "\e905";
+}
+.icon-bird:before {
+  content: "\e906";
+}
+.icon-birthday:before {
+  content: "\e907";
+}
+.icon-birthday-alt:before {
+  content: "\e908";
+}
+.icon-cake:before {
+  content: "\e909";
+}
+.icon-calendar:before {
+  content: "\e90a";
+}
+.icon-candle:before {
+  content: "\e90b";
+}
+.icon-caret-down:before {
+  content: "\e90c";
+}
+.icon-caret-left:before {
+  content: "\e90d";
+}
+.icon-caret-right:before {
+  content: "\e90e";
+}
+.icon-caret-up:before {
+  content: "\e90f";
+}
+.icon-cart:before {
+  content: "\e910";
+}
+.icon-chevron-down:before {
+  content: "\e911";
+}
+.icon-chevron-left:before {
+  content: "\e912";
+}
+.icon-chevron-right:before {
+  content: "\e913";
+}
+.icon-chevron-up:before {
+  content: "\e914";
+}
+.icon-clapper:before {
+  content: "\e915";
+}
+.icon-close:before {
+  content: "\e916";
+}
+.icon-confetti:before {
+  content: "\e917";
+}
+.icon-dynamite:before {
+  content: "\e918";
+}
+.icon-fireworks:before {
+  content: "\e919";
+}
+.icon-goat-fingers:before {
+  content: "\e91a";
+}
+.icon-heart-balloon:before {
+  content: "\e91b";
+}
+.icon-lily:before {
+  content: "\e91c";
+}
+.icon-list1:before {
+  content: "\e91d";
+}
+.icon-love:before {
+  content: "\e91e";
+}
+.icon-magic-wand:before {
+  content: "\e91f";
+}
+.icon-magnify:before {
+  content: "\e920";
+}
+.icon-map-marker:before {
+  content: "\e921";
+}
+.icon-petard:before {
+  content: "\e922";
+}
+.icon-question:before {
+  content: "\e923";
+}
+.icon-rock-and-roll:before {
+  content: "\e924";
+}
+.icon-rocket:before {
+  content: "\e925";
+}
+.icon-sky-lantern:before {
+  content: "\e926";
+}
+.icon-snowflake:before {
+  content: "\e927";
+}
+.icon-sparkler:before {
+  content: "\e928";
+}
+.icon-sparkler-alt:before {
+  content: "\e929";
+}
+.icon-splash:before {
+  content: "\e92a";
+}
+.icon-star:before {
+  content: "\e92b";
+}
+.icon-stars:before {
+  content: "\e92c";
+}
+.icon-stars-alt:before {
+  content: "\e92d";
+}
+.icon-truck:before {
+  content: "\e92e";
+}
+.icon-two-rockets:before {
+  content: "\e92f";
+}
+.icon-volcano:before {
+  content: "\e930";
+}
+.icon-list:before {
+  content: "\e9ba";
+}

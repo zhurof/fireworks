@@ -1,0 +1,450 @@
+﻿@media(min-width: 576px)
+	.main-menu
+		margin-left: 0
+		>li
+			>ul
+				left: 0
+				width: 100%
+@media(min-width: 768px)
+	h1,h2
+		font-size: 60px
+	.menu-btn
+		display: none
+	.logo
+		display: inline-block
+		font-size: 14px
+		line-height: 1.5
+		position: relative
+		&__main
+			font-size: 32px
+		&__caption
+			position: absolute
+			left: 0
+			top: 100%
+			width: 100%
+			padding: 10px 0 0
+	.phone-select
+		&__head
+			font-size: 22px
+	.header
+		&__line
+			display: block
+		&__top-menu
+			display: block
+			font-size: 14px
+			text-align: right
+			>li
+				display: inline-block
+				margin: 0 7px
+				>a
+					padding: 0
+		&__line
+			margin-left: auto
+		&__tools
+			padding-left: 0
+		&__cart
+			order: 1
+			margin: 0 0 0 15px
+		&__auth
+			display: flex
+			align-items: flex-end
+			line-height: normal
+			&:before
+				content: ''
+				display: block
+				flex: 1 1 auto
+				border-bottom: 1px solid $blue
+			a
+				flex: 0 0 auto
+				margin: 0 0 0 20px
+	.main-menu
+		display: flex
+		align-items: center
+		>li
+			&:before
+				content: ''
+				display: none
+				position: absolute
+				top: 0
+				left: 0
+				width: 310px
+				background-color: #fff
+				height: 100%
+				z-index: 1
+				box-shadow: 0 0 10px rgba(0, 0, 0, 0.12)
+			>a
+				display: flex
+				align-items: center
+				font-size: 16px
+				line-height: 21/16*1
+				padding: 15px
+			>ul
+				width: 310px
+			&.open
+				box-shadow: none
+				background: none
+				&:before
+					display: block					
+				>a
+					padding: 15px
+	.animation1
+		padding: 74px 50px 85px 50%
+		background-size: 65% auto,cover
+		background-position-y: -30%, center
+		font-size: 28px
+		border-radius: 5px
+		&__tooltip
+			font-size: 19px
+		&__title
+			font-size: 60px
+	.info-block
+		&__container
+			padding: 0 15px
+		&__inner
+			display: flex
+			flex-wrap: wrap
+			justify-content: space-between
+		&__main
+			width: 100%
+			margin: 0 0 27px
+		&__item
+			width: calc(50% - 7px)
+			padding: 30px 15px 40px 170px
+			border-radius: 5px
+		&__subtitle
+			font-size: 24px
+		&__number
+			font-size: 64px
+		&__item--yellow &__img
+			left: 31%
+			max-width: 100%
+			width: 65%			
+	.categories
+		&__item
+			width: 225px
+			margin: 7.5px
+			&:nth-child(n+7):not(.show)
+				display: flex				
+		&__footer
+			display: none
+	.advantages
+		&__item
+			padding: 0 15px
+			&:before
+				width: .9em
+	.card
+		height: 100%
+		margin: 0
+	.category
+		&__head
+			font-size: 22px
+			margin: 0 0 50px
+		&__title
+			display: inline-block
+			margin: 0 1em 0 0
+		&__item
+			margin-bottom: 50px
+		&__link
+			text-decoration: none
+			border-bottom: 1px dotted
+	.sale-block
+		&__title
+			display: inline-block
+			margin: 0 1em 0 0
+		&__nav
+			display: inline-flex
+		&__slider
+			margin: 0 -15px
+		&__item
+			width: calc(100% / 3)
+			&:nth-child(n+2)
+				display: block
+			&:nth-child(n+4)
+				display: none
+	.about-block
+		&__sidebar
+			display: flex
+			background-color: #ededf2
+		&__img
+			width: 50%
+			+obj
+		&__social
+			width: 50%
+			padding: 33px
+			img
+				width: auto
+				margin: 0 auto
+	.tabs
+		&__head
+			display: flex
+			border-bottom: 3px solid #ededf2
+		&__trigger
+			display: inline-block
+			padding: 0 20px
+			line-height: 48/16*1
+			font-weight: 400
+			transition: background .3s ease
+			cursor: pointer
+			white-space: nowrap
+			overflow: hidden
+			text-overflow: ellipsis
+			&.active
+				background-color: #ededf2
+				font-weight: bold
+				padding: 0 17px
+		&__mobile-trigger
+			display: none
+		&__item
+			padding: 40px 0 20px
+	.consult
+		padding: 0
+		position: relative
+		font-size: 29px
+		background: none
+		border-radius: 0
+		&__body
+			padding: 60px 270px 125px 50px
+			background: url(../img/green-bg-md.jpg) no-repeat center/cover
+			position: relative
+			border-radius: 5px
+		&__img
+			position: absolute
+			bottom: 0
+			right: 10px
+		&__form
+			max-width: 290px
+	.footer
+		padding: 50px 0
+		&__line
+			display: block
+			margin: 0
+		&__menu
+			display: block
+			font-size: 14px
+			border-bottom: 1px solid #c6c6c6
+			padding: 0
+			margin: 0 0 35px
+			text-align: left
+			>li
+				display: inline-block
+				margin-right: 4px
+				&:last-child
+					margin-right: 0
+				>a
+					display: block
+					padding: 0 0 1em
+		&__contacts
+			display: block
+			margin: 0
+		&__contact
+			&-title
+				display: inline-block
+				vertical-align: middle
+		&__copy
+			margin: 40px 0 0
+	.designer
+		margin: 0 -15px
+		
+@media(min-width: 1200px)
+	.logo
+		font-size: 14px
+		&__main
+			font-size: 42px
+		&__caption
+			display: block
+			position: static
+			width: auto
+			padding: 0
+	.header
+		&__top-menu
+			font-size: 16px
+			margin: 0 auto
+			width: max-content
+			max-width: 100%
+			text-align: center
+			border-bottom: 1px solid $blue
+			>li
+				margin: 0 10px 30px
+				&:first-child
+					margin-left: 0
+				&:last-child
+					margin-right: 0
+		&__line
+			text-align: right
+		&__auth
+			font-size: 14px
+			display: block
+			text-align: right
+			&:before
+				display: none
+	.main-menu
+		>li
+			&.has-children:hover
+				&:before
+					display: block
+				>a
+					position: relative
+					z-index: 2
+				>ul
+					display: block
+	.animation1
+		padding: 100px 20px 100px 50%
+		background-position: -50% -11%, 50%
+	.info-block
+		&__main
+			margin: 0 0 20px
+		&__item
+			padding: 50px 20px 30px
+			width: calc(50% - 10px)
+			p
+				max-width: 50%
+				margin-left: auto
+		&__subtitle,
+		&__number
+			display: block
+			max-width: 50%
+			margin-left: auto
+			position: relative
+	@supports(display: grid)
+		.info-block
+			&__inner
+				display: grid
+				grid-template-columns: 2fr 1fr
+				grid-gap: 20px
+			&__main
+				width: auto
+				margin: 0
+				grid-row: span 2
+			&__item
+				width: auto
+				margin: 0
+				min-height: 241px
+		.animation1
+			height: 100%
+	.advantages
+		&__item
+			align-items: center
+			justify-content: center
+			&:before
+				font-size: 64px
+				width: 54/64*1em
+	.categories
+		margin: 0
+		&__item
+			width: 213px
+	.card
+		border: 3px solid transparent
+		padding: 148px 20px 40px
+		box-shadow: 0 0 1px 1px $blue
+		transition: all .3s linear
+		&:hover
+			border-color: #ffce57
+			padding-bottom: 30px
+			padding-top: 140px
+			box-shadow: 0 0 10px rgba(0,0,0,.12)
+		&__discount
+			left: -3px
+		&__box
+			display: block
+		&__discount,
+		&__video,
+		&__chars
+			opacity: 0
+			transition: all .5s ease
+			.card:hover &
+				opacity: 1
+		&__chars
+			margin-left: auto
+			font-size: 16px
+			line-height: 37/16*1
+			padding: 0
+		&__img
+			position: absolute
+			width: auto
+			height: 270px
+			width: calc(100% - 50px)
+			object-fit: contain
+			object-position: center
+			top: 20px
+			left: 50%
+			transform-origin: left center
+			transition: all .5s ease
+			transform: translateX(-50%)
+			user-select: none
+			.card:hover &
+				transform: scale(.4)
+				left: 30px
+				top: 90px
+				opacity: 1
+		&__title
+			font-size: 20px
+		&__price
+			font-size: 20px
+		&__footer
+			font-size: 14px
+			line-height: 1.3
+			max-height: 0
+			overflow: hidden
+			transition: inherit
+			.card:hover &
+				max-height: 1.3em
+		&__vendor-code
+			font-size: calc(1em - 1px)
+		&__quick-buy
+			font-size: inherit			
+	.category
+		background: none
+	.sale-card
+		&:before
+			content: ''
+			display: block
+			position: absolute
+			top: 100%
+			left: 0
+			width: 100%
+			border-top: 3px solid transparent
+			transition: all .3s ease
+		&__img
+			transition: all .3s ease
+		&:hover
+			&:before
+				border-color: #f8bf35
+		&:hover &__img
+			opacity: 1
+	.sale-block
+		&__item
+			&:nth-child(n+4)
+				display: block
+			&:nth-child(n+6)
+				display: block
+	.about-block
+		&__sidebar
+			display: block
+			background: none
+			padding: 0 15px
+		&__img
+			width: 100%
+		&__social
+			width: 100%
+			padding: 33px 33px 37px
+		&__content
+			padding-top: 0
+			padding-bottom: 0
+	.consult
+		&__title
+			font-size: 55px
+			margin: 0
+		br
+			display: none
+		&__body
+			padding: 100px 350px 115px 70px
+		&__form
+			max-width: 100%
+			input
+				display: inline-block
+				margin: 0 20px 0 0
+				width: 290px
+		&__btn
+			width: 290px
+			display: inline-block
+				
