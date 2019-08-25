@@ -1,7 +1,7 @@
 	<footer class="footer">
 		<div class="container">
 			<div class="row align-items-md-start">
-				<div class="col-md-3 col-xl-2 footer__line">
+				<div class="col-md-3 col-xl-auto footer__line">
 					<a href="/" class="logo footer__logo"><span class="logo__main logo__main--big">Pyroboom</span></a>
 					<span class="menu-btn footer__menu-btn">Меню</span>
 				</div>
@@ -14,7 +14,7 @@
 						<li><a href="#">Партнёры</a></li>
 					</ul>
 				</div>
-				<div class="col-md-4 col-xl-3 order-md-1">
+				<div class="col-md-4 col-xl-auto order-md-1">
 					<div class="phone-select footer__phone">
 						<div class="phone-select__head">(066) 205-07-51</div>
 						<ul class="phone-select__list">
