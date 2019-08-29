@@ -5,6 +5,11 @@
 			>ul
 				left: 0
 				width: 100%
+	.contacts
+		&__map
+			padding: 0 15px
+			iframe
+				height: 400px
 @media(min-width: 768px)
 	h1,h2
 		font-size: 60px
@@ -213,6 +218,38 @@
 			right: 10px
 		&__form
 			max-width: 290px
+	.dropdown		
+		&__trigger
+			font-size: 24px
+			width: max-content
+			max-width: 100%
+			padding-right: 5px
+			&:after
+				position: static
+				vertical-align: middle
+				margin-left: 10px
+	.delivery
+		&__text
+			font-size: 28px
+	.contacts
+		h2
+			font-size: 32px
+		h3
+			font-size: 18px
+		&__main
+			font-size: inherit
+			margin: 0 0 60px
+			p
+				&:first-of-type
+					width: 200%
+		&__phone
+			font-size: 41px
+		&__img
+			margin: 200px auto 30px
+		&__map
+			iframe
+				width: 515px
+				height: 360px
 	.footer
 		padding: 50px 0
 		&__line
@@ -246,6 +283,25 @@
 		margin: 0 -15px
 		
 @media(min-width: 1200px)
+	.field
+		display: flex
+		align-items: center
+		&__input
+			width: calc(100% - 190px)
+			flex: 1 1 auto
+		&__text
+			width: 190px
+			flex: 0 0 auto
+			text-align: right
+			margin: 0
+			padding: 0 15px
+			font-size: inherit
+		&__label
+			width: 190px
+			flex: 0 0 auto
+			padding-left: 45px
+			font-size: 14px
+			font-weight: 400
 	.logo
 		font-size: 14px
 		&__main
@@ -447,6 +503,87 @@
 		&__btn
 			width: 290px
 			display: inline-block
+	.delivery
+		&__text
+			max-width: 750px
+			text-align: center
+			margin: 0 auto
+			padding: 60px 0
+	.payment
+		&__footer
+			text-align: center
+			margin: 80px 0 0
+	.contacts
+		padding: 80px 0 60px
+		&__title
+			margin: 0 0 .3em
+		&__main
+			margin: 0 0 85px
+			p
+				&:first-of-type
+					width: auto
+		&__img
+			margin: 30px auto
+		&__item
+			margin: 0 0 85px
+			&:nth-last-child(-n+2)
+				margin: 0
+		&__map
+			margin: 0
+	.good-line
+		flex-wrap: nowrap
+		&__pic
+			width: 110px
+			margin: 0
+			padding: 0 20px
+		&__text
+			width: auto
+			margin: 0 auto 0 0
+		&__remove
+			margin-left: 40px
+		&__total-price
+			width: 100px
+			margin: 0
+			text-align: right
+		&__remove
+			line-height: 2
+			cursor: pointer
+			&:hover
+				color: $red
+	.basket
+		&__title
+			margin: 0 0 1em
+		&__body
+			margin: 0 0 80px
+		&__sidebar
+			padding: 60px 20px
+			margin: 0
+			position: sticky
+			top: 0
+	.step-form
+		counter-reset: form
+		&__item
+			padding: 60px 120px
+		&__subtitle
+			position: relative
+			&:before
+				counter-increment: form
+				content: counter(form)
+				display: inline-block
+				position: absolute
+				top: calc(50% - 25px)
+				left: -80px
+				width: 50px
+				height: 50px
+				border-radius: 50%
+				text-align: center
+				line-height: 50px
+				font: normal bold 26px/50px "PF BeauSans Pro",sans-serif
+				color: #fff
+				background-color: #d6d6d9
+				transition: inherit
+			.open>&:before
+				background-color: $green
 	.footer
 		&__menu
 			font-size: inherit
@@ -468,3 +605,11 @@
 		width: 246px
 		max-width: 100%
 		margin-left: auto
+		
+@media(max-width: 992px)
+	[type=date]
+		appearance: none
+		&::-webkit-inner-spin-button,
+		&::-webkit-calendar-picker-indicator
+			display: none
+			appearance: none

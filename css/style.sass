@@ -67,6 +67,9 @@ p
 	&:last-child
 		margin: 0
 
+em
+	font-style: inherit
+	color: #808080
 *:focus
 	outline: none
 
@@ -82,10 +85,40 @@ textarea
 	resize: none
 	overflow: auto /*опять же для IE*/
 	
-//select
+[type=text],
+[type=email],
+[type=tel],
+[type=password],
+[type=url],
+[type=date],
+textarea
+	display: block
+	width: 100%
+	margin: 0 0 15px
+	border: none
+	border-radius: 5px
+	background-color: #fff
+	line-height: normal
+	padding: 12.5px 30px 12.5px 20px
+	font-weight: 400
+	
+[type=date]
+	padding-right: 20px
+	padding-left: 50px
+	background: url(../img/icons/calendar.svg) no-repeat 23px center/17px auto,#fff
+	
+textarea
+	box-shadow: 0 1px rgba(187, 187, 187, 0.46)
+	
+select
 	appearance: none
-	padding: 10.5px 40px 10.5px 20px
-	background: url(../img/icons/angle.svg) no-repeat right 19px center/11px auto
+	padding: 12.5px 30px 12.5px 20px
+	background: url(../img/icons/caret-down.svg) no-repeat right 13px center/10px auto,#fff
+	font-weight: 400
+	line-height: normal
+	border: none
+	border-radius: 5px
+	box-shadow: 0 1px rgba(187, 187, 187, 0.46)
 	&::-ms-expand
 		display: none
 		
@@ -96,12 +129,96 @@ textarea
 	&::-webkit-search-results-decoration
 		display: none
 		
-//[type=number]
-	-moz-appearance: textfield
-	&::-webkit-outer-spin-button,
-	&::-webkit-inner-spin-button
-		appearance: none
+[type=checkbox]
+	appearance: none
+	display: inline-block
+	width: 20px
+	height: 20px
+	text-align: center
+	font: normal normal 13px/20px fontAwesome
+	color: transparent
+	border-radius: 2px
+	background-color: #fff
+	box-shadow: 0 1px rgba(187, 187, 187, 0.46)
+	flex: 0 0 auto
+	&:before
+		content: '\f00c'
+	&:checked
+		color: $green
+		
+label
+	display: inline-block
+	user-select: none
+		
+.number-field
+	display: inline-block
+	white-space: nowrap
+	font-size: 0
+	&__btn
+		display: inline-block
+		font-size: 20px
+		line-height: 2
+		color: #c7c7c7
+		width: 2em
+		text-align: center
+		cursor: pointer
+		user-select: none
+		vertical-align: middle
+	&__input
+		border: 1px solid $blue
+		border-radius: 3px
+		background-color: #fff
+		min-width: 0
+		text-align: center
+		width: 33px
+		height: 45px
+		font-size: 18px
+		vertical-align: middle
+		-moz-appearance: textfield
+		&::-webkit-outer-spin-button,
+		&::-webkit-inner-spin-button
+			appearance: none
+			margin: 0
+			
+.field
+	position: relative
+	margin: 0 0 15px
+	&--required
+		&:after
+			content: '*'
+			display: inline-block
+			position: absolute
+			line-height: 1
+			top: 10px
+			right: 10px
+			color: $red
+			pointer-events: none
+	&__text
+		display: block
+		flex: 0 0 auto
+		text-align: right
+		color: #a6a6a6
+		line-height: normal
+		font-size: 14px
+		margin: .7em 0 0 
+	&__label
+		display: flex
+		align-items: flex-start
+		line-height: normal
+		margin: .7em 0 0
+		input
+			flex: 0 0 auto
+			margin: 0 10px 0 0
+		span
+			display: block
+			flex: 1 1 auto
+			margin-top: .1em
+	&__input
+		width: 100%
+		flex: 1 1 auto
 		margin: 0
+		
+	
 		
 /*кнопки*/
 button,
@@ -133,6 +250,10 @@ button,
 	&:active
 		box-shadow: none
 		transform: translateY(3px)
+	&--green
+		background: #81bf5f
+		box-shadow: 0 3px #54a627
+		color: #fff
 	&--cart
 		padding: 0 13px
 		font-size: 14px
@@ -165,6 +286,13 @@ h3
 ul,ol
 	margin: 0 0 1em
 		
+ol
+	list-style-position: inside
+	padding: 0
+	>li
+		margin: 0 0 1em
+		&:last-child
+			margin: 0
 /*таблицы*/
 /*контейнеры*/
 .wrapper
@@ -762,7 +890,199 @@ ul,ol
 		user-select: none
 		margin-right: 20px
 		vertical-align: middle
-		
+.dropdown
+	margin: 0 0 20px
+	&__trigger
+		font-size: 20px
+		font-weight: 400
+		font-family: 'PF BeauSans Pro',sans-serif
+		position: relative
+		border-bottom: 2px solid #d5d5e0
+		padding: .5em 1em .5em 0
+		user-select: none
+		cursor: pointer
+		&:after
+			content: '\e90c'
+			font: normal normal .5em/1 icomoon
+			color: $green
+			display: inline-block
+			position: absolute
+			top: calc(50% - .5em)
+			right: 0
+			transition: all .3s ease
+		&.open
+			&:after
+				transform: rotate(180deg)
+	&__content
+		padding: 10px 0
+		display: none
+		p
+			margin: 0 0 1em
+			&:last-child
+				margin: 0
+.delivery
+	padding: 30px 0 40px
+	&__img
+		margin: 20px auto
+	&__text
+		font: italic normal 20px/1.5 "PF BeauSans Pro",sans-serif
+		color: #ababab
+		padding: 30px 0
+	&__subtitle
+		color: #232323
+		font-style: normal
+.payment
+	counter-reset: payment
+	padding: 30px 0 70px
+	&__title
+		margin: 0 0 1.5em
+	&__item
+		min-height: 85px
+		position: relative
+		padding: 35px 0 5px 115px
+		margin: 0 0 25px
+		background: url(../img/ellipse.svg) no-repeat left top
+		line-height: 1.5
+		font-weight: 400
+		&:before
+			counter-increment: payment
+			content: counter(payment, decimal-leading-zero)
+			display: inline-block
+			position: absolute
+			font-size: 42px
+			line-height: 1
+			top: 35px 
+			left: 45px
+	&__footer
+		font-size: 18px
+		line-height: 26/18*1
+		font-weight: 400
+		margin: 40px 0 0
+		a
+			color: #3875db
+
+.contacts
+	padding: 30px 0
+	font-weight: 400
+	h2
+		margin: 0 0 .6em
+	h3
+		font-size: 16px
+	p
+		margin: 0 0 1.5em
+	ul
+		+unlist
+		margin: 0 0 1.5em
+	a
+		text-decoration: none
+	&__title
+		margin: 0 0 1em
+	&__main
+		font-size: 14px
+		line-height: 2
+		p
+			&:first-of-type
+				font-size: 18px
+				line-height: 27/18*1
+	&__phone
+		font-size: 32px
+		line-height: 37/32*1
+		font-weight: bold
+		margin: 0 0 1em
+	&__btn
+		margin: 0 0 40px
+	&__img
+		margin: 30px auto 40px
+	&__address
+		font-weight: bold
+		margin: 0 0 1.5em
+		&:before
+			content: '\e921'
+			font: normal normal 22px/1 'icomoon'
+			color: #ffce57
+			margin-right: 15px
+			vertical-align: middle
+	&__item
+		margin: 0 0 30px
+	&__map
+		padding: 0
+		iframe
+			display: block
+			width: 100%
+			height: 73vw
+.good-line
+	display: flex
+	flex-wrap: wrap
+	align-items: center
+	justify-content: space-between
+	padding: 23px 0
+	border-bottom: 1px solid $blue
+	font-weight: 400
+	&__pic
+		width: 80px
+		flex: 0 0 auto
+		padding-right: 20px
+		margin: 0 0 30px
+		img
+			display: block
+			margin: 0 auto
+	&__text
+		width: calc(100% - 80px)
+		margin: 0 0 30px
+	&__title
+		font: inherit
+		font-size: 18px
+		font-weight: 400
+		margin: 0
+	&__price
+		font-size: 14px
+		color: #939393
+	&__total-price
+		margin: 0 15px
+	&__remove
+		font-size: 12px
+		margin-left: 15px
+		color: #939393
+.basket
+	padding: 30px 0
+	&__body
+		margin: 0 0 30px
+	&__sidebar
+		margin: 20px 0 0
+		font-size: 18px
+		line-height: 28/18*1
+		font-weight: 400
+		padding: 30px 20px
+		box-shadow: 0px 5px 46.06px 2.94px rgba(123, 123, 123, 0.15)
+		text-align: center
+		p
+			margin: 0 0 1em
+	&__info
+		text-align: left
+		max-width: 240px
+		margin: 0 auto
+	&__total
+		font-size: 26px
+		font-weight: bold
+		margin: 0 0 1em
+.step-form
+	&__item
+		background-color: #ededf2
+		padding: 20px 15px
+		border-radius: 10px
+		margin: 0 0 20px
+	&__subtitle
+		font-size: 20px
+		margin: 0
+		color: #bababd
+		transition: all .3s ease
+		.open>&
+			color: #232323
+	&__fields
+		display: none
+		padding: 15px 0 0
+		.open>&
+			display: block	
 /*ПОДВАЛ*/
 .footer
 	background-color: #ededf2

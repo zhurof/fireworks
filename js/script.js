@@ -38,7 +38,7 @@ $('.main-menu .has-children>a').click(function(e){
 	if(isMobile()){
 		e.preventDefault();
 		$(this).parent('li').toggleClass('open').siblings().removeClass('open');
-	}	
+	}
 })
 
 $('.categories__more').click(function(e){
@@ -58,7 +58,7 @@ $('.tabs__trigger').click(function(){
 })
 $('.tabs__mobile-trigger').click(function(){
 	var index = $(this).parents('.tabs').find('.tabs__mobile-trigger').index(this);
-	if(!$(this).is('.active')){		
+	if(!$(this).is('.active')){
 		$(this).parents('.tabs').find('.tabs__trigger').removeClass('active').eq(index).addClass('active');
 		$(this).addClass('active').siblings('.active').removeClass('active');
 		$(this).siblings('.tabs__item').hide();
@@ -79,4 +79,72 @@ $('.up-btn').click(function(e){
 $('.footer__menu-btn').click(function(){
 	$(this).toggleClass('active');
 	$('.footer__menu').toggleClass('open');
+})
+
+$('.dropdown__trigger').click(function(){
+	$(this).toggleClass('open').siblings('.dropdown__content').slideToggle(300);
+})
+
+//кастомный input[type=number]
+$('.number-field__btn').click(function(){
+	var input = $(this).siblings('input')[0],
+			min = input.min || 0,
+			max = input.max || 99,
+			step = input.step || 1,
+			value = input.value;
+
+	if($(this).is('.plus') && value <= max-step){
+		input.value = +value + +step;
+		$(input).trigger('change');
+	}
+	if($(this).is('.minus') && value >= +min + +step){
+		input.value = value - step;
+		$(input).trigger('change');
+	}
+})
+$('[type=number]').change(function(){
+	console.log(this.value);
+})
+//пошаговая форма
+function checkItem(item){
+	var flag = true;
+	$(item).find('input').each(function(){
+		if(!this.validity.valid){
+			flag = false;
+		}
+	})
+	return flag;
+}
+$('.step-form input').on('input',function(){
+	var	block = $(this).parents('.step-form__item')[0];
+
+	if(checkItem(block)){
+		var flag = true;
+		$(block).nextAll('.step-form__item').each(function(){
+			if(flag){
+				$(this).addClass('open');
+			}else{
+				flag = false;
+			}
+			if(!checkItem(this)){
+				flag = false;
+			}
+		})
+	}else{
+		$(block).nextAll('.step-form__item').removeClass('open');
+	}
+})
+
+//цена товаров в корзине
+$('body').on('change','.good-line__amount input',function(){
+	var good = $(this).parents('.good-line'),
+			pricePerUnit = parseFloat(good.find('.good-line__price').text()) || 0,
+			amount = +this.value || 0;
+	good.find('.good-line__total-price').text(pricePerUnit*amount + " грн.");
+})
+//Удаление товаров из корзины (декоративное)
+$('.good-line__remove').click(function(){
+	$(this).parents('.good-line').fadeOut(300,function(){
+		$(this).remove()
+	});
 })
