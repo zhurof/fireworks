@@ -10,6 +10,15 @@
 			padding: 0 15px
 			iframe
 				height: 400px
+	.banner
+		background: none
+		padding: 0
+		&__inner
+			padding: 60px
+			background: url(../img/banner-md.jpg) no-repeat center/cover
+			border-radius: 5px
+		&__title
+			font-size: 40px
 @media(min-width: 768px)
 	h1,h2
 		font-size: 60px
@@ -144,6 +153,9 @@
 		&__head
 			font-size: 22px
 			margin: 0 0 50px
+			display: flex
+			flex-wrap: wrap
+			align-items: center
 		&__title
 			display: inline-block
 			margin: 0 1em 0 0
@@ -152,6 +164,13 @@
 		&__link
 			text-decoration: none
 			border-bottom: 1px dotted
+		&__filter
+			margin: 1em 0
+		&__amount
+			display: inline-block
+			margin-right: 1.5em
+		&__select
+			display: inline-block			
 	.sale-block
 		&__title
 			display: inline-block
@@ -250,6 +269,8 @@
 			iframe
 				width: 515px
 				height: 360px
+	.text-columns
+		padding: 60px 0 30px
 	.footer
 		padding: 50px 0
 		&__line
@@ -450,6 +471,8 @@
 			font-size: inherit			
 	.category
 		background: none
+		&__filter
+			margin-left: auto
 	.sale-card
 		&:before
 			content: ''
@@ -584,6 +607,27 @@
 				transition: inherit
 			.open>&:before
 				background-color: $green
+	.filter
+		background: none
+		padding: 0
+		&__inner
+			padding: 40px 45px 15px
+			border-radius: 5px
+			background-color: #ededf2
+	.text-columns
+		padding: 100px 0
+	.breadcrumbs
+		display: block
+	.banner
+		font-size: 22px
+		&__inner
+			padding: 100px
+			background-image: url(../img/banner-xl.jpg)
+		&__text
+			width: 60%
+		&__title
+			font-size: 62px
+			margin: 0 0 .2em
 	.footer
 		&__menu
 			font-size: inherit

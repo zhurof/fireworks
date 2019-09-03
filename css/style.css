@@ -132,6 +132,16 @@ select::-ms-expand {
   display: none;
 }
 
+.simple-select {
+  display: block;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding: 0;
+  background: none;
+  text-decoration: underline;
+  margin: 0 0 4px;
+}
+
 [type=search]::-webkit-search-decoration, [type=search]::-webkit-search-cancel-button, [type=search]::-webkit-search-results-button, [type=search]::-webkit-search-results-decoration {
   display: none;
 }
@@ -262,6 +272,87 @@ label {
   margin: 0;
 }
 
+.fork {
+  width: 250px;
+  max-width: 100%;
+}
+.fork__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.fork__output {
+  width: calc(50% - 3.5px);
+  background-color: #fff;
+  font-size: 14px;
+  color: #a2a2a2;
+  padding: 10px 5px 10px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+}
+.fork__output span {
+  display: block;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  margin-right: 1em;
+}
+.fork__output input {
+  display: block;
+  border: none;
+  padding: 0;
+  background: none;
+  min-width: 0;
+  font-weight: bold;
+  color: #000;
+  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  margin: 0;
+  -moz-appearance: textfield;
+}
+.fork__output input::-webkit-outer-spin-button, .fork__output input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+          appearance: none;
+  margin: 0;
+}
+
+.irs--round {
+  height: 36px;
+}
+.irs--round .irs-handle {
+  width: 19px;
+  height: 19px;
+  border: none;
+  background-color: #f9c658;
+  top: 18px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.irs--round .irs-handle:hover, .irs--round .irs-handle.state_hover {
+  background-color: #f9c658;
+}
+.irs--round .irs-line {
+  background-color: #ccccd8;
+  border-radius: 0;
+  height: 2px;
+  top: 28px;
+}
+.irs--round .irs-bar {
+  height: 2px;
+  background-color: #f9c658;
+  top: 28px;
+}
+
 /*кнопки */
 button,
 [type=submit],
@@ -344,6 +435,12 @@ h1, h2 {
 h3 {
   font-size: 26px;
   line-height: 1.1153846154;
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "SF UI Display", sans-serif;
 }
 
 /*списки */
@@ -538,7 +635,7 @@ ol > li:last-child {
   top: 100%;
   left: -15px;
   width: calc(100% + 15px);
-  z-index: 1;
+  z-index: 2;
   background-color: #fff;
   font-weight: 500;
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
@@ -928,6 +1025,18 @@ ol > li:last-child {
 .category__head {
   font-size: 14px;
   margin: 0 0 2em;
+}
+.category__select {
+  display: block;
+  padding-left: 0;
+  font-size: 16px;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.category__amount {
+  display: block;
+  font-size: 18px;
 }
 .category__text {
   line-height: 1.5;
@@ -1471,6 +1580,66 @@ ol > li:last-child {
   display: block;
 }
 
+.filter {
+  padding: 40px 0 10px;
+  background-color: #ededf2;
+  margin: 0 0 1em;
+}
+.filter__item {
+  margin-bottom: 25px;
+}
+
+.text-columns {
+  padding: 80px 0 50px;
+  color: #808080;
+}
+.text-columns h3 {
+  color: #000;
+}
+.text-columns ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.text-columns__item {
+  margin-bottom: 30px;
+}
+
+.breadcrumbs {
+  display: none;
+  padding: 20px 0;
+  font-size: 14px;
+  color: #8f8f8f;
+}
+.breadcrumbs__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.breadcrumbs__list > li {
+  display: inline-block;
+}
+.breadcrumbs__list > li:not(:last-child):after {
+  content: "";
+  font-family: icomoon;
+  font-size: 75%;
+  margin: 0 1em;
+}
+
+.banner {
+  background: url(../img/banner.jpg) no-repeat center/cover;
+  padding: 45px 0 90px;
+  color: #fff;
+}
+.banner__text {
+  width: 50%;
+  min-width: 210px;
+  margin-left: auto;
+}
+.banner__title {
+  margin: 0 0 10px;
+}
+
 /*ПОДВАЛ */
 .footer {
   background-color: #ededf2;
@@ -1598,6 +1767,19 @@ ol > li:last-child {
   }
   .contacts__map iframe {
     height: 400px;
+  }
+
+  .banner {
+    background: none;
+    padding: 0;
+  }
+  .banner__inner {
+    padding: 60px;
+    background: url(../img/banner-md.jpg) no-repeat center/cover;
+    border-radius: 5px;
+  }
+  .banner__title {
+    font-size: 40px;
   }
 }
 @media(min-width: 768px) {
@@ -1804,6 +1986,14 @@ ol > li:last-child {
   .category__head {
     font-size: 22px;
     margin: 0 0 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .category__title {
     display: inline-block;
@@ -1815,6 +2005,16 @@ ol > li:last-child {
   .category__link {
     text-decoration: none;
     border-bottom: 1px dotted;
+  }
+  .category__filter {
+    margin: 1em 0;
+  }
+  .category__amount {
+    display: inline-block;
+    margin-right: 1.5em;
+  }
+  .category__select {
+    display: inline-block;
   }
 
   .sale-block__title {
@@ -1953,6 +2153,10 @@ ol > li:last-child {
   .contacts__map iframe {
     width: 515px;
     height: 360px;
+  }
+
+  .text-columns {
+    padding: 60px 0 30px;
   }
 
   .footer {
@@ -2242,6 +2446,9 @@ ol > li:last-child {
   .category {
     background: none;
   }
+  .category__filter {
+    margin-left: auto;
+  }
 
   .sale-card:before {
     content: "";
@@ -2421,6 +2628,39 @@ ol > li:last-child {
   }
   .open > .step-form__subtitle:before {
     background-color: #7dbb4b;
+  }
+
+  .filter {
+    background: none;
+    padding: 0;
+  }
+  .filter__inner {
+    padding: 40px 45px 15px;
+    border-radius: 5px;
+    background-color: #ededf2;
+  }
+
+  .text-columns {
+    padding: 100px 0;
+  }
+
+  .breadcrumbs {
+    display: block;
+  }
+
+  .banner {
+    font-size: 22px;
+  }
+  .banner__inner {
+    padding: 100px;
+    background-image: url(../img/banner-xl.jpg);
+  }
+  .banner__text {
+    width: 60%;
+  }
+  .banner__title {
+    font-size: 62px;
+    margin: 0 0 0.2em;
   }
 
   .footer__menu {

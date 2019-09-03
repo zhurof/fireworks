@@ -122,6 +122,14 @@ select
 	&::-ms-expand
 		display: none
 		
+.simple-select
+	display: block
+	box-shadow: none
+	padding: 0
+	background: none
+	text-decoration: underline
+	margin: 0 0 4px
+		
 [type=search]
 	&::-webkit-search-decoration,
 	&::-webkit-search-cancel-button,
@@ -217,8 +225,62 @@ label
 		width: 100%
 		flex: 1 1 auto
 		margin: 0
-		
-	
+.fork
+	width: 250px
+	max-width: 100%
+	&__head
+		display: flex
+		justify-content: space-between
+	&__output
+		width: calc(50% - 3.5px)
+		background-color: #fff
+		font-size: 14px
+		color: #a2a2a2
+		padding: 10px 5px 10px 20px
+		display: flex
+		align-items: center
+		border-radius: 5px
+		span
+			display: block
+			flex: 0 0 auto
+			margin-right: 1em
+		input
+			display: block
+			border: none
+			padding: 0
+			background: none
+			min-width: 0
+			font-weight: bold
+			color: #000
+			width: 100%
+			flex: 1 1 auto
+			margin: 0
+			-moz-appearance: textfield
+			&::-webkit-outer-spin-button,
+			&::-webkit-inner-spin-button
+				appearance: none
+				margin: 0
+.irs
+	&--round
+		height: 36px
+	&--round &-handle
+		width: 19px
+		height: 19px
+		border: none
+		background-color: #f9c658
+		top: 18px
+		box-shadow: none
+		&:hover,&.state_hover
+			background-color: #f9c658
+	&--round &-line
+		background-color: #ccccd8
+		border-radius: 0
+		height: 2px
+		top: 28px
+	&--round &-bar
+		height: 2px 
+		background-color: #f9c658
+		top: 28px
 		
 /*кнопки*/
 button,
@@ -282,6 +344,10 @@ h1,h2
 h3
 	font-size: 26px
 	line-height: 29/26*1
+h4
+	font-size: 18px
+	font-weight: 500
+	font-family: "SF UI Display",sans-serif
 /*списки*/
 ul,ol
 	margin: 0 0 1em
@@ -425,7 +491,7 @@ ol
 			top: 100%
 			left: -15px
 			width: calc(100% + 15px)
-			z-index: 1
+			z-index: 2
 			background-color: #fff
 			font-weight: 500
 			box-shadow: 0 5px 10px rgba(0,0,0,.1)
@@ -704,6 +770,15 @@ ol
 	&__head
 		font-size: 14px
 		margin: 0 0 2em	
+	&__select
+		display: block
+		padding-left: 0
+		font-size: 16px
+		background-color: transparent
+		box-shadow: none
+	&__amount
+		display: block
+		font-size: 18px
 	&__text
 		line-height: 1.5
 		margin: 0 0 1.5em
@@ -1082,7 +1157,47 @@ ol
 		display: none
 		padding: 15px 0 0
 		.open>&
-			display: block	
+			display: block
+.filter
+	padding: 40px 0 10px
+	background-color: #ededf2
+	margin: 0 0 1em
+	&__item
+		margin-bottom: 25px
+.text-columns
+	padding: 80px 0 50px
+	color: #808080
+	h3
+		color: #000
+	ul
+		+unlist
+	&__item
+		margin-bottom: 30px
+.breadcrumbs
+	display: none
+	padding: 20px 0
+	font-size: 14px
+	color: #8f8f8f
+	&__list
+		+unlist
+		>li
+			display: inline-block
+			&:not(:last-child):after
+				content: '\e903'
+				font-family: icomoon
+				font-size: 75%
+				margin: 0 1em
+.banner
+	background: url(../img/banner.jpg) no-repeat center/cover
+	padding: 45px 0 90px
+	color: #fff
+	&__text
+		width: 50%
+		min-width: 210px
+		margin-left: auto
+	&__title
+		margin: 0 0 10px
+				
 /*ПОДВАЛ*/
 .footer
 	background-color: #ededf2

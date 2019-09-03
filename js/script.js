@@ -102,9 +102,6 @@ $('.number-field__btn').click(function(){
 		$(input).trigger('change');
 	}
 })
-$('[type=number]').change(function(){
-	console.log(this.value);
-})
 //пошаговая форма
 function checkItem(item){
 	var flag = true;
@@ -147,4 +144,29 @@ $('.good-line__remove').click(function(){
 	$(this).parents('.good-line').fadeOut(300,function(){
 		$(this).remove()
 	});
+})
+//слайдер-ползунок для двойного поля
+function updateForkValues(data){
+	$(data.input).parents('.fork').find('.fork__from').val(data.from);
+	$(data.input).parents('.fork').find('.fork__to').val(data.to);
+}
+$(".fork__input").ionRangeSlider({
+	type: "double",
+	hide_min_max: true,
+	hide_from_to: true,
+	skin: "round",
+	min: 0,
+	max: 1000,
+	onChange: updateForkValues,
+	onStart: updateForkValues
+});
+
+$('.fork__output input').on('input',function(){
+	var slider = $(this).parents('.fork').find('.fork__input').data('ionRangeSlider');
+	if($(this).is('.fork__from')){
+		slider.update({from: this.value})
+	}
+	if($(this).is('.fork__to')){
+		slider.update({to: this.value})
+	}
 })
