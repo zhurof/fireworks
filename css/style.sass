@@ -1173,20 +1173,21 @@ ol
 		+unlist
 	&__item
 		margin-bottom: 30px
-.breadcrumbs
-	display: none
+.page-head
 	padding: 20px 0
 	font-size: 14px
 	color: #8f8f8f
-	&__list
-		+unlist
-		>li
-			display: inline-block
-			&:not(:last-child):after
-				content: '\e903'
-				font-family: icomoon
-				font-size: 75%
-				margin: 0 1em
+	&__id
+		text-align: right
+.breadcrumbs
+	+unlist
+	>li
+		display: inline-block
+		&:not(:last-child):after
+			content: '\e903'
+			font-family: icomoon
+			font-size: 75%
+			margin: 0 1em
 .banner
 	background: url(../img/banner.jpg) no-repeat center/cover
 	padding: 45px 0 90px
@@ -1197,7 +1198,200 @@ ol
 		margin-left: auto
 	&__title
 		margin: 0 0 10px
-				
+.pic-block
+	padding: 40px 0
+	font-size: 18px
+	&__img
+		display: block
+		margin: 2em auto 0
+	&__title
+		margin: 0 0 1em
+	p
+		margin: 0 0 1em
+		&:last-child
+			margin-bottom: 0
+	strong
+		display: inline-block
+		color: #cacaca
+		font-weight: inherit
+		font-style: italic
+		font-size: 20/18*1em
+.gallery-block
+	padding: 40px 0
+.animation-section
+	padding: 50px 0 100px
+	max-width: 100%
+	overflow: hidden
+	&__item
+		transform: scale(1.3)
+.animation	
+	canvas
+		display: block
+		max-width: 100%
+		object-fit: contain
+		object-position: center
+.action-block
+	display: flex
+	align-items: flex-start
+	color: $red
+	line-height: 21/16*1
+	font-weight: 400
+	&__discount
+		width: 75px
+		height: 75px
+		background-color: $red
+		color: #fff
+		font-size: 23px
+		font-weight: bold
+		text-align: center
+		line-height: 75px
+		border-radius: 50%
+		transform: rotate(-30deg)
+		flex: 0 0 auto
+		margin-right: 25px
+	&__text
+		margin: 0 0 1em
+.timer
+	font-size: 14px
+	color: #5f5f5f
+	font-weight: 400
+	margin: 0 0 1.5em
+	&__text
+		margin: 0 0 .4em
+	&__body
+		display: flex
+		align-items: flex-start
+	&__item
+		text-align: center
+	&__number
+		display: block
+		font-size: 23/14*1em
+	&__caption
+		display: block
+		font-size: 12/14*1em
+	&__separ
+		font-size: 23/14*1em
+		display: inline-block
+		margin: 0 .2em
+	
+.good
+	padding: 20px 0 30px
+	&__head
+		margin: 0 0 30px
+	&__id
+		font-size: 14px
+		color: #8f8f8f
+	&__pic
+		border: 1px solid #bedde1
+		border-radius: 5px
+		padding: 20px 25px 30px
+	&__slider
+		padding: 30px 0
+		position: relative
+		img
+			display: block
+			height: 150px
+			margin: 0 auto
+			object-fit: contain
+			object-position: center
+	&__arrow
+		display: inline-block
+		cursor: pointer
+		position: absolute
+		color: #bedde1
+		font-size: 20px
+		padding: .6em
+		top: calc(50% - .5em - 10px)
+		&.prev
+			left: -25px
+		&.next
+			right: -25px
+	&__thumbs
+		+unlist
+		display: flex
+		flex-wrap: wrap
+		justify-content: center
+		margin: 0 -5px
+		>li
+			width: 50px
+			margin: 5px
+			img
+				display: block
+				width: 100%
+				height: 100%
+				+obj
+	&__main
+		padding: 30px 0
+	&__chars
+		padding: 0 0 40px
+	&__price
+		text-align: center
+		font: normal normal 35px/normal "PF BeauSans Pro",sans-serif
+		padding: 24px 0
+	&__old-price
+		font-size: 22/35*1em
+		text-decoration: line-through
+		text-decoration-color: $red
+		vertical-align: top
+	&__buy
+		text-align: center
+		margin: 0 0 40px
+	&__btn
+		display: block
+		width: 100%
+		font-size: 20px
+		line-height: 2.8
+		margin: 0 0 30px
+	&__quick-buy
+		font-weight: bold
+	&__list
+		+unlist
+		>li
+			&:before
+				content: ''
+				display: inline-block
+				width: 9px
+				height: 9px
+				background-color: $blue
+				margin-right: .8em
+				border-radius: 2px
+	&__options
+		margin: 40px 0 0
+	&__option
+		display: flex
+		align-items: center
+		font-size: 15px
+		line-height: 1.5
+		margin: 0 0 30px
+		&:last-child
+			margin: 0
+		&-icon
+			font-size: 45px
+			color: $blue
+			margin-right: 20px
+	&__text
+		margin: 0 0 40px
+		.tabs__item
+			color: #8b8b8b
+	&__media
+		margin: 0 -15px
+		img,video
+			display: block
+			width: 100%
+			height: auto
+.show-animation
+	&__inner
+		position: relative
+		margin: 0 -15px
+	svg,canvas
+		min-height: 310px
+	&__btn
+		position: absolute
+		bottom: 50px
+		left: 50%
+		transform: translateX(-50%)
+		&:active
+			transform: translate(-50%,3px)
 /*ПОДВАЛ*/
 .footer
 	background-color: #ededf2

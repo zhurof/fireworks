@@ -1,14 +1,17 @@
-﻿/* $('.animation').each(function(){
-	var animationData = $(this).attr('data-animation'),
+﻿$('.animation').each(function(){
+	var animationData = $(this).data('animation'),
 			params = {
 				container: this,
-				renderer: 'canvas',
+				renderer: 'svg',
 				loop: false,
 				autoplay: true,
-				path: animationData
+				path: animationData,
+				rendererSettings: {
+					preserveAspectRatio: 'xMidYMid slice'
+				}
 			};
 	lottie.loadAnimation(params);
-}) */
+})
 function isMobile(){
 	return window.innerWidth < 1200;
 }

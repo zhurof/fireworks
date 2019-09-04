@@ -1,8 +1,8 @@
 ﻿<?php	include "header.php";?>		
 	<main>
-		<div class="breadcrumbs">
+		<div class="page-head d-none d-xl-block">
 			<div class="container">
-				<ul class="breadcrumbs__list">
+				<ul class="breadcrumbs">
 					<li><a href="/">Главная</a></li>
 					<li>Салютные установки</li>
 				</ul>
