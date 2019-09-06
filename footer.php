@@ -47,6 +47,44 @@
 			</div>
 		</div>
 	</footer>
+	<div class="modal" id="basket">
+		<span class="modal__close icon-close"></span>
+		<h3 class="modal__title">Корзина</h3>
+		<div class="modal__basket">
+			<div class="good-line">
+				<div class="good-line__pic">
+					<img src="img/catalog/1-min.png" alt="">
+				</div>
+				<div class="good-line__text">
+					<h3 class="good-line__title">Царь-бомба Black Tiger</h3>
+					<div class="good-line__price">460 грн.</div>
+				</div>
+				<span class="number-field good-line__amount">
+					<span class="number-field__btn minus">-</span>
+					<input type="number" class="number-field__input" min="1" max="99" value="2" />
+					<span class="number-field__btn plus">+</span>
+				</span>
+				<div class="good-line__total-price">1560 грн.</div>
+				<span class="icon-close good-line__remove"></span>
+			</div>
+			<div class="good-line">
+				<div class="good-line__pic">
+					<img src="img/catalog/2-min.png" alt="">
+				</div>
+				<div class="good-line__text">
+					<h3 class="good-line__title">Петарды «Бамболейло»</h3>
+					<div class="good-line__price">1560 грн.</div>
+				</div>
+				<span class="number-field good-line__amount">
+					<span class="number-field__btn minus">-</span>
+					<input type="number" class="number-field__input" min="1" max="99" value="1" />
+					<span class="number-field__btn plus">+</span>
+				</span>
+				<div class="good-line__total-price">920 грн.</div>
+				<span class="icon-close good-line__remove"></span>
+			</div>
+		</div>
+	</div>
 	<script src="libs/jquery/jquery-3.4.1.min.js"></script>
 	<script src="libs/anim/anim.min.js"></script>
 	<script src="libs/ion-range-slider/ion.rangeSlider.min.js"></script>

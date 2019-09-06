@@ -1,0 +1,9 @@
+<IfModule mod_rewrite.c>
+  Options +FollowSymLinks
+  RewriteEngine On
+	
+	#Редирект браузеров Internet Explorer от 9 версии и старше
+	RewriteCond %{REQUEST_URI} !=/old-ie.html
+	RewriteCond %{HTTP_USER_AGENT} .*MSIE\s[0-9].*	
+	RewriteRule ^(.*)$ /old-ie.html [R=301,L]
+</IfModule>

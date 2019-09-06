@@ -36,20 +36,20 @@
 		<div class="categories">
 			<div class="container">
 				<div class="row justify-content-center">
-					<a href="#" class="categories__item"><i class="categories__icon icon-two-rockets"></i><span>Батареи салютов</span></a>
-					<a href="#" class="categories__item"><i class="categories__icon icon-stars"></i><span>Римские свечи и фаера</span></a>
-					<a href="#" class="categories__item"><i class="categories__icon icon-petard"></i><span>Петарды, шутихи</span></a>
-					<a href="#" class="categories__item"><i class="categories__icon icon-sparkler"></i><span>Бенгальские свечи</span></a>
-					<a href="#" class="categories__item"><i class="categories__icon icon-fireworks"></i><span>Катюши, балеты, драконы</span></a>
-					<a href="#" class="categories__item"><i class="categories__icon icon-cake"></i><span>Фейерверки и свечи для торта</span></a>
-					<a href="#" class="categories__item"><i class="categories__icon icon-rocket"></i><span>Ракеты</span></a>
-					<a href="#" class="categories__item"><i class="categories__icon icon-star"></i><span>Дымные фонтаны и факела</span></a>
-					<a href="#" class="categories__item"><i class="categories__icon icon-volcano"></i><span>Фонтаны, вулканы холодные фонтаны</span></a>
-					<a href="#" class="categories__item"><i class="categories__icon icon-clapper"></i><span>Пневмохлопушки</span></a>
-					<a href="#" class="categories__item"><i class="categories__icon icon-sky-lantern"></i><span>Небесные фонарики</span></a>
-					<a href="#" class="categories__item"><i class="categories__icon icon-candle"></i><span>Свечи-таблетки</span></a>
-					<a href="#" class="categories__item"><i class="categories__icon icon-lily"></i><span>Водяные лилии</span></a>
-					<a href="#" class="categories__item"><i class="categories__icon icon-balloons"></i><span>Воздушные шарики</span></a>
+					<a href="category.php" class="categories__item"><i class="categories__icon icon-two-rockets"></i><span>Батареи салютов</span></a>
+					<a href="category.php" class="categories__item"><i class="categories__icon icon-stars"></i><span>Римские свечи и фаера</span></a>
+					<a href="category.php" class="categories__item"><i class="categories__icon icon-petard"></i><span>Петарды, шутихи</span></a>
+					<a href="category.php" class="categories__item"><i class="categories__icon icon-sparkler"></i><span>Бенгальские свечи</span></a>
+					<a href="category.php" class="categories__item"><i class="categories__icon icon-fireworks"></i><span>Катюши, балеты, драконы</span></a>
+					<a href="category.php" class="categories__item"><i class="categories__icon icon-cake"></i><span>Фейерверки и свечи для торта</span></a>
+					<a href="category.php" class="categories__item"><i class="categories__icon icon-rocket"></i><span>Ракеты</span></a>
+					<a href="category.php" class="categories__item"><i class="categories__icon icon-star"></i><span>Дымные фонтаны и факела</span></a>
+					<a href="category.php" class="categories__item"><i class="categories__icon icon-volcano"></i><span>Фонтаны, вулканы холодные фонтаны</span></a>
+					<a href="category.php" class="categories__item"><i class="categories__icon icon-clapper"></i><span>Пневмохлопушки</span></a>
+					<a href="category.php" class="categories__item"><i class="categories__icon icon-sky-lantern"></i><span>Небесные фонарики</span></a>
+					<a href="category.php" class="categories__item"><i class="categories__icon icon-candle"></i><span>Свечи-таблетки</span></a>
+					<a href="category.php" class="categories__item"><i class="categories__icon icon-lily"></i><span>Водяные лилии</span></a>
+					<a href="category.php" class="categories__item"><i class="categories__icon icon-balloons"></i><span>Воздушные шарики</span></a>
 					<a href="#" class="categories__item"><i class="categories__icon icon-confetti"></i><span>Наполнители для конфетти машин</span></a>
 				</div>
 				<div class="categories__footer"><a href="#" class="categories__more">Показать все рубрики</a></div>
@@ -79,7 +79,7 @@
 								<div class="card__body">
 									<h3 class="card__title">Салютная установка BALET</h3>
 									<span class="card__price">279 грн.</span>
-									<button class="btn btn--cart card__btn">В корзину</button>
+									<button class="btn btn--cart card__btn" data-modal="basket">В корзину</button>
 								</div>
 								<div class="card__footer">
 									<span class="card__vendor-code">Артикул: 2312</span>
@@ -103,7 +103,7 @@
 								<div class="card__body">
 									<h3 class="card__title">Царь-бомба Black Tiger</h3>
 									<span class="card__price">479 грн.</span>
-									<button class="btn btn--cart card__btn">В корзину</button>
+									<button class="btn btn--cart card__btn" data-modal="basket">В корзину</button>
 								</div>
 								<div class="card__footer">
 									<span class="card__vendor-code">Артикул: 2312</span>
@@ -127,7 +127,7 @@
 								<div class="card__body">
 									<h3 class="card__title">Петарды Petardy</h3>
 									<span class="card__price">2479 грн.</span>
-									<button class="btn btn--cart card__btn">В корзину</button>
+									<button class="btn btn--cart card__btn" data-modal="basket">В корзину</button>
 								</div>
 								<div class="card__footer">
 									<span class="card__vendor-code">Артикул: 2312</span>
@@ -151,7 +151,7 @@
 								<div class="card__body">
 									<h3 class="card__title">Салютная установка BALET</h3>
 									<span class="card__price">279 грн.</span>
-									<button class="btn btn--cart card__btn">В корзину</button>
+									<button class="btn btn--cart card__btn" data-modal="basket">В корзину</button>
 								</div>
 								<div class="card__footer">
 									<span class="card__vendor-code">Артикул: 2312</span>
@@ -175,7 +175,7 @@
 								<div class="card__body">
 									<h3 class="card__title">Салютная установка BALET</h3>
 									<span class="card__price">279 грн.</span>
-									<button class="btn btn--cart card__btn">В корзину</button>
+									<button class="btn btn--cart card__btn" data-modal="basket">В корзину</button>
 								</div>
 								<div class="card__footer">
 									<span class="card__vendor-code">Артикул: 2312</span>
@@ -199,7 +199,7 @@
 								<div class="card__body">
 									<h3 class="card__title">Салютная установка BALET</h3>
 									<span class="card__price">279 грн.</span>
-									<button class="btn btn--cart card__btn">В корзину</button>
+									<button class="btn btn--cart card__btn" data-modal="basket">В корзину</button>
 								</div>
 								<div class="card__footer">
 									<span class="card__vendor-code">Артикул: 2312</span>

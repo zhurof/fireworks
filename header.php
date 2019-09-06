@@ -33,13 +33,13 @@
 				<div class="col-md-9 col-xl-6 order-md-1">
 					<ul class="header__top-menu">
 						<li><a href="#">Доставка и оплата</a></li>
-						<li><a href="#">Сертификаты качества</a></li>
-						<li><a href="#">Контакты</a></li>
+						<li><a href="docs.php">Сертификаты качества</a></li>
+						<li><a href="contacts.php">Контакты</a></li>
 						<li><a href="#">Партнёры</a></li>
 					</ul>
 				</div>
 				<div class="col-xl-4 col-md-5 order-md-3 order-xl-5  header__tools">			
-					<a href="#" class="cart-btn header__cart">Корзина <span>2</span></a>
+					<a href="basket.php" class="cart-btn header__cart">Корзина <span>2</span></a>
 					<form action="" class="search-form header__search">
 						<input type="search" class="search-form__input">
 						<button class="search-form__btn icon-magnify"></button>
@@ -54,32 +54,32 @@
 						<li class="has-children">
 							<a href="#"><i class="icon-rocket"></i>Салютные установки</a>
 							<ul>
-								<li><a href="#">Салюты маленькие</a></li>
-								<li><a href="#">Салюты средние</a></li>
-								<li><a href="#">Салюты большие VIP</a></li>
-								<li><a href="#">Фейерверки разнокалиберные</a></li>
-								<li><a href="#">Миномёты</a></li>
+								<li><a href="category.php">Салюты маленькие</a></li>
+								<li><a href="category.php">Салюты средние</a></li>
+								<li><a href="category.php">Салюты большие VIP</a></li>
+								<li><a href="category.php">Фейерверки разнокалиберные</a></li>
+								<li><a href="category.php">Миномёты</a></li>
 							</ul>
 						</li>
 						<li class="has-children">
-							<a href="#"><i class="icon-dynamite"></i>Мелкая пиротехника</a>
+							<a href="category.php"><i class="icon-dynamite"></i>Мелкая пиротехника</a>
 							<ul>
-								<li><a href="#">lorem ispum</a></li>
-								<li><a href="#">lorem ispum</a></li>
-								<li><a href="#">lorem ispum</a></li>
-								<li><a href="#">lorem ispum</a></li>
+								<li><a href="category.php">lorem ispum</a></li>
+								<li><a href="category.php">lorem ispum</a></li>
+								<li><a href="category.php">lorem ispum</a></li>
+								<li><a href="category.php">lorem ispum</a></li>
 							</ul>
 						</li>
 						<li class="has-children">
-							<a href="#"><i class="icon-snowflake"></i>Праздничная продукция</a>
+							<a href="category.php"><i class="icon-snowflake"></i>Праздничная продукция</a>
 							<ul>
-								<li><a href="#">lorem ispum</a></li>
-								<li><a href="#">lorem ispum</a></li>
-								<li><a href="#">lorem ispum</a></li>
-								<li><a href="#">lorem ispum</a></li>
+								<li><a href="category.php">lorem ispum</a></li>
+								<li><a href="category.php">lorem ispum</a></li>
+								<li><a href="category.php">lorem ispum</a></li>
+								<li><a href="category.php">lorem ispum</a></li>
 							</ul>
 						</li>
-						<li><a href="#"><i class="icon-magic-wand"></i>Шоу «под&nbsp;ключ»</a></li>
+						<li><a href="show.php"><i class="icon-magic-wand"></i>Шоу «под&nbsp;ключ»</a></li>
 					</ul>
 				</div>				
 			</div>
